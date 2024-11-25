@@ -1,7 +1,6 @@
-//your JS code here. If required.
 const name = document.getElementById("fname");
 
-name.addEventListner("blur",(e)=>{
-	const text = e.target.textContent;
-	 e.target.textContent = text.toUpperCase();
+name.addEventListener("blur",(e)=>{
+	const text = e.target.value;
+	e.target.value = text.toUpperCase();
 })
